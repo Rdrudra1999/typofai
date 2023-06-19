@@ -23,7 +23,7 @@ const BusinessCategorySelect = () => {
   const [categories, setCategories] = useState<Category[]>([]);
   let [selectedCategoryId, setSelectedCategoryId] = useState<string>('');
   const [selectedCategory, setSelectedCategory] = useState('');
-  const [businessName, setBusinessName] = useState('');
+  const [businessName, setBusinessName] = useState<string>('');
   const [categoryImage, setCategoryImage] = useState();
 
   const handleCategorySelect = (event: React.ChangeEvent<HTMLSelectElement>) => {
