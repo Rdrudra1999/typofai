@@ -65,13 +65,13 @@ const PrvDemoWeb = () => {
     }
   };
 
-
   useEffect(() => {
-    const businessName = localStorage.getItem('businessName');
-    // Use the businessName value as needed
-    console.log(`businessName: ${businessName}`);
-    setBusinessName(businessName);
+    const storedBusinessName = localStorage.getItem('businessName');
+    const initialBusinessName = storedBusinessName !== null ? storedBusinessName : '';
+    console.log(`businessName: ${initialBusinessName}`);
+    setBusinessName(initialBusinessName);
   }, []);
+  
 
 
 
