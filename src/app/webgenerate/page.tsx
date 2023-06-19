@@ -16,19 +16,19 @@ interface PrvHeaderProps {
 const PrvDemoWeb = () => {
   const [businessName, setBusinessName] = useState('');
   const [loading, setLoading] = useState(true);
-  const [loadingText, setLoadingText] = useState('Gerenrating a beautifull website...');
+  const [loadingText, setLoadingText] = useState('Generating a beautiful website...');
   const loadingSteps = [
-    'Gerenrating Banner...',
-    'Gerenrating Short Intro...',
-    'Gerenrating Feature Item...',
-    'Gerenrating Category...',
-    'Gerenrating News Letter...',
-    'Gerenrating Footer...',
+    'Generating Banner...',
+    'Generating Short Intro...',
+    'Generating Feature Item...',
+    'Generating Category...',
+    'Generating News Letter...',
+    'Generating Footer...',
   ];
   const [stepIndex, setStepIndex] = useState(0);
   const [websiteReady, setWebsiteReady] = useState(false);
   const [showModal, setShowModal] = useState(true);
-  const modalRef = useRef(null);
+  const modalRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -43,38 +43,28 @@ const PrvDemoWeb = () => {
       setLoadingText('Loading Complete');
       setTimeout(() => {
         setWebsiteReady(true);
-      }, 1000); // Delay to show the modal after 2 seconds of loading complete
+      }, 2000); // Delay to show the modal after 2 seconds of loading complete
     } else {
       setLoadingText(loadingSteps[stepIndex]);
     }
   }, [loading, stepIndex]);
 
   useEffect(() => {
-    if (stepIndex === loadingSteps.length - 1) {
-      setLoading(false);
-    }
-  }, [stepIndex, loadingSteps.length]);
+    const businessName = localStorage.getItem('businessName');
+    // Use the businessName value as needed
+    console.log(`businessName: ${businessName}`);
+    setBusinessName(businessName || ''); // Use an empty string if businessName is null
+  }, []);
 
   const closeModal = () => {
     setShowModal(false);
   };
 
-  const handleOverlayClick = (event:any) => {
+  const handleOverlayClick = (event: React.MouseEvent<HTMLDivElement>) => {
     if (event.target === modalRef.current) {
       closeModal();
     }
   };
-
-
-  useEffect(() => {
-    const businessName = localStorage.getItem('businessName');
-    // Use the businessName value as needed
-    console.log(`businessName: ${businessName}`);
-    setBusinessName(businessName);
-  }, []);
-
-
-
 
   return (
     <>
@@ -107,10 +97,10 @@ const PrvDemoWeb = () => {
             <BuildNavbar />
           </div>
           <div className='max-w-[90rem] mx-auto'>
-            <PrvHeader businessName={businessName}  />
+            <PrvHeader businessName={businessName} />
             <PrvBanner />
             <PrvShortIntro />
-            
+
             <PrvCategory />
             <PrvFeatureItem />
             <PrevNewsLetter />
