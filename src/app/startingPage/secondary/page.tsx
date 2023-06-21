@@ -23,7 +23,7 @@ const BusinessCategorySelect = () => {
   const [categories, setCategories] = useState<Category[]>([]);
   let [selectedCategoryId, setSelectedCategoryId] = useState<string>('');
   const [selectedCategory, setSelectedCategory] = useState('');
-  const [businessName, setBusinessName] = useState('');
+  const [businessName, setBusinessName] = useState<string>('');
   const [categoryImage, setCategoryImage] = useState();
 
   const handleCategorySelect = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -136,12 +136,15 @@ const BusinessCategorySelect = () => {
       <div className={`bg-white h-screen ${inter.className}`}>
         <div className="w-full h-screen md:flex md:flex-row">
           {
-            <div className="order-1 block w-full md:flex h-1/2 md:h-full md:max-w-2xl md:order-2">
+            <div className="order-1 block w-full md:flex h-1/2 md:h-full md:max-w-md lg:max-w-xl sm:max-w-md md:order-2">
               {
                 open ? (
                   <ImageCarousel imageList={categoryImage} />
                 ) : (
                   <div className="order-1 block w-full h-full md:flex md:h-full bg-gradient-to-r from-blue-500 via-blue-400 to-blue-300 md:max-w-2xl md:order-2" id="map">
+                    <div className="absolute top-0 left-0 p-4 block md:hidden z-50">
+                      <img src="/logo2.svg" alt="Logo" className="w-32 h-10 " />
+                    </div>
                   </div>
                 )
               }
@@ -161,6 +164,9 @@ const BusinessCategorySelect = () => {
                       </button>
                       {/* sub content end */}
                       <h2 className="pt-5 text-xl font-bold md:text-3xl text-start">How Would You Describe Your Business Name ? </h2>
+                    </div>
+                    <div className="absolute top-0 left-0 p-4 hidden md:block z-50">
+                      <img src="/logo2.svg" alt="Logo" className="w-32 h-10 " />
                     </div>
                     <div className="flex flex-col max-w-3xl pt-5 space-y-5">
                       {/* Business Name input field */}
@@ -196,17 +202,22 @@ const BusinessCategorySelect = () => {
                           <HiOutlineArrowNarrowLeft className="text-2xl" />
                         </a>
                       </button>
+
                       <p className="text-xl font-bold md:text-xl text-start">
-                      It appears that
+                        It appears that
                         <span className="pl-2 pr-2 font-serif text-xl text-blue-300">
                           {locationInfo.city}, {locationInfo.state}
                         </span>
-                         is where you are currently situated.
+                        is where you are currently situated.
                         {/* <span className='pl-2'><GrLocation className='text-2xl text-black' /></span> */}
                       </p>
                       {/* sub content end */}
                       <h2 className="pt-5 text-xl font-bold md:text-3xl text-start">What type of commercial endeavor are you involved in ?</h2>
                     </div>
+                    <div className="absolute top-0 left-0 p-4 hidden md:block">
+                      <img src="/logo2.svg" alt="Logo" className="w-32 h-10" />
+                    </div>
+                    
                     <div className="flex flex-col max-w-3xl pt-5 space-y-5">
                       {/* select input field */}
                       <select className="w-full max-w-full rounded-md select select-bordered select-md" onChange={handleCategorySelect} value={selectedCategory || ""}>

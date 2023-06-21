@@ -7,41 +7,45 @@ const inter = Inter({ subsets: ['latin'] });
 
 const socialIcons = [
     {
-        id:"1",
+        id: "1",
         link: "https://www.youtube.com/typof",
-        icon : <FiYoutube className='w-6 h-6'/>
+        icon: <FiYoutube className='w-6 h-6' />
     },
     {
-        id:"2",
+        id: "2",
         link: "https://www.instagram.com/typof.co/",
-        icon : <FiInstagram className='w-6 h-6'/>
+        icon: <FiInstagram className='w-6 h-6' />
     },
     {
-        id:"3",
+        id: "3",
         link: "https://www.facebook.com/typof.co",
-        icon : <FiFacebook className='w-6 h-6'/>
+        icon: <FiFacebook className='w-6 h-6' />
     },
     {
-        id:"4",
+        id: "4",
         link: "https://twitter.com/typof_",
-        icon : <FiTwitter className='w-6 h-6'/>
+        icon: <FiTwitter className='w-6 h-6' />
     },
     {
-        id:"5",
+        id: "5",
         link: "https://www.linkedin.com/company/typof-technologies",
-        icon : <FiLinkedin className='w-6 h-6'/>
+        icon: <FiLinkedin className='w-6 h-6' />
     },
 ]
 
 
 const Sidebar = () => {
     return (
-        <div className="lg:flex flex-col justify-between lg:p-8 xl:p-12 lg:max-w-sm xl:max-w-lg">
-            <div className="flex items-center justify-start space-x-3">
-                {/* <span className="bg-black rounded-full w-8 h-8"></span>
-                <a href="#" className={`font-bold text-3xl ${inter.className}`}>TypofAI</a> */}
+        <div className="lg:flex flex-col justify-between lg:p-8 xl:p-12 w-full">
+            <div className="flex items-center justify-start space-x-3 h-full w-full">
+                <img src="https://uploads-ssl.webflow.com/6344fe0ae449f96ce795b92b/647ec76544a6f43b1d261144_6.webp" alt="typof-logo" className="
+                width: 100%;
+                max-width: 100px;
+                height: auto;
+                object-fit: contain;
+                " />
             </div>
-            {/* <p className="font-medium">© 2022 Company</p> */}
+
         </div>
     );
 };
@@ -51,7 +55,7 @@ const LoginBox = () => {
         <div className="flex flex-1 flex-col justify-center items-center space-y-5 max-w-3xl">
             <div className="flex flex-col space-y-5 text-center">
                 <h2 className="text-3xl md:text-4xl font-bold">Revolutionize your online business with our AI-Powered Ecommerce Platform.</h2>
-                <div className='w-full flex justify-center'>
+                <div className='w-full flex justify-center pt-5'>
                     <button className="group flex w-44 cursor-pointer select-none items-center justify-center rounded-md bg-black px-6 py-2 text-white transition" >
                         <Link href="/startingPage/secondary" className="group flex w-full items-center justify-center rounded py-1 text-center font-bold"> Get Started </Link>
                         <FiArrowRight className="flex-0 group-hover:w-6 ml-4 h-6 w-0 transition-all" />
@@ -88,14 +92,11 @@ const GetStarted = () => {
             <div className="bg-white h-screen">
                 <div className="md:flex md:flex-row w-full h-screen">
                     {/* Sidebar */}
-                    <div className="md:flex block h-1/2 md:h-full md:max-w-2xl w-full order-1 md:order-2"
-                        style={{
-                            backgroundImage: "url('/banner.webp')",
-                            backgroundRepeat: "no-repeat",
-                            backgroundSize: "cover"
-                        }}
-                    >
+                    <div className="md:flex block h-1/2 md:h-full  w-full order-1 md:order-2 bg-black md:max-w-md lg:max-w-xl sm:max-w-md">
                         <Sidebar />
+                    </div>
+                    <div className="absolute top-0 left-0 p-4">
+                        <img src="/logo2.svg" alt="Logo" className="w-32 h-10" />
                     </div>
 
                     {/* Main Content */}

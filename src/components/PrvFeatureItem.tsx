@@ -21,15 +21,13 @@ const categories: {
           name: 'T-Shirt',
           images: {
             image_1:
-              'https://img.freepik.com/free-photo/graphic-tshirt-trendy-design-mockup-presented-wooden-hanger_460848-14026.jpg?w=740&t=st=1686834604~exp=1686835204~hmac=2a0cc9e223e1313ece7e00da8daead4d4a03baa27fe12a343fe4ee70d6f03e6b',
+              'https://images.pexels.com/photos/4066288/pexels-photo-4066288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
             image_2:
-              'https://img.freepik.com/free-photo/basic-white-tee-women-s-apparel-rear-view_53876-108033.jpg?w=740&t=st=1686834670~exp=1686835270~hmac=95c4ed8f1804cde4ff576f04ddaff50940aa01eedbed23975715227cb56aff1a',
+              'https://images.unsplash.com/photo-1571455786673-9d9d6c194f90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
             image_3:
-              'https://img.freepik.com/free-photo/shirt-hanger-with-green-background_23-2150264156.jpg?w=360&t=st=1686834891~exp=1686835491~hmac=aeccb062035dcf4b70ef5f135a394cab6f31995ec5e57fe50a1c8b7ea1a996b9',
+              'https://images.unsplash.com/photo-1677709678785-bbe8227262cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
             image_4:
-              'https://img.freepik.com/free-psd/mens-ringers-t-shirt-mockup_126278-115.jpg?w=740&t=st=1686835040~exp=1686835640~hmac=e23a181c39445481fb0015d107e33dbd4a3705d808f3b8df59bfdb8002caae88',
-            image_5:
-              'https://img.freepik.com/free-photo/man-brown-long-sleeve-tee-men-s-fashion-studio-portrait_53876-102827.jpg?w=360&t=st=1686835110~exp=1686835710~hmac=5e28da353a3aa28d1789b2d1d6490feca05fb146e87a61a6621e9f869f332f3e',
+              'https://images.pexels.com/photos/3353290/pexels-photo-3353290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
           },
         },
         {
@@ -37,15 +35,15 @@ const categories: {
           name: 'Pants',
           images: {
             image_1:
-              'https://img.freepik.com/free-photo/pants-hanger-with-green-background_23-2150264166.jpg?w=360&t=st=1686835169~exp=1686835769~hmac=72745429f79643e3237f37a85be0bb9c5bbad11525ca758fd2b286ac9fbd3462',
+              'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80',
             image_2:
-              'https://img.freepik.com/free-photo/jeans_1203-8094.jpg?w=740&t=st=1686835211~exp=1686835811~hmac=203097b5354d8927a5cd9059718cab64258dcfaaeb6f75e68b552e7a16eff84e',
+              'https://images.unsplash.com/photo-1604136172384-b2e9c43271ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80',
             image_3:
-              'https://img.freepik.com/free-photo/pants-hanger-with-green-background_23-2150264163.jpg?w=360&t=st=1686835244~exp=1686835844~hmac=42efd899df971fa6f4695da123f59c3f3c0c71b2667046cffcaa85de7b09c0a1',
+              'https://images.unsplash.com/photo-1582552938357-32b906df40cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80',
             image_4:
-              'https://img.freepik.com/free-photo/pants-hanger-with-green-background_23-2150264165.jpg?w=360&t=st=1686835292~exp=1686835892~hmac=83a4de4205795d35be5e3f1373cbe78d2e1e73251f97d95b7e281332b82e8c2a',
+              'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=397&q=80',
             image_5:
-              'https://img.freepik.com/free-photo/man-wearing-brown-pants-close-up_53876-102239.jpg?w=360&t=st=1686835358~exp=1686835958~hmac=24d038704077134bd669a1fe15d97854e6b27220fd5e3ba19d90d17021eb999e',
+              'https://images.unsplash.com/photo-1555689502-c4b22d76c56f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80',
           },
         },
         {
@@ -53,15 +51,15 @@ const categories: {
           name: 'Shoes',
           images: {
             image_1:
-              'https://img.freepik.com/free-photo/white-high-top-sneakers-unisex-footwear-fashion_53876-106036.jpg?w=1060&t=st=1686835643~exp=1686836243~hmac=716a285a6de48b3215200804f60ac4ce6906cc1faad39d4bbcec3bab01242c01',
+              'https://images.pexels.com/photos/1407354/pexels-photo-1407354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
             image_2:
-              'https://img.freepik.com/free-psd/sport-shoe-mockup-isolated_1310-1632.jpg?w=1060&t=st=1686835714~exp=1686836314~hmac=8b71ab1fe7d54f8b6f76e4153870076ac490afa310ba16fe2010822fa2c807d7',
+              'https://images.pexels.com/photos/9777242/pexels-photo-9777242.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
             image_3:
-              'https://img.freepik.com/free-photo/new-black-sneakers-isolated-white-background_93675-135051.jpg?w=1060&t=st=1686835750~exp=1686836350~hmac=b85de09ecdd8edd3bd893591852900cc8ea6630e4c172dcf5e65c338eaca9a2a',
+              'https://images.pexels.com/photos/12526086/pexels-photo-12526086.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
             image_4:
-              'https://img.freepik.com/free-photo/fashion-shoes-sneakers_1203-7529.jpg?w=1060&t=st=1686835982~exp=1686836582~hmac=4ef5f16f31143b3e30cfc67c24d185f34737816f1d19c3ea0a77cd70c6c2113c',
+              'https://images.pexels.com/photos/14212622/pexels-photo-14212622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
             image_5:
-              'https://img.freepik.com/free-photo/colorful-slip-unisex-streetwear-sneakers-fashion_53876-101518.jpg?w=1060&t=st=1686836024~exp=1686836624~hmac=56479f997fe72589c874f534e9cd7b6d003326f208627b81658564d9e8a98a9a',
+              'https://images.pexels.com/photos/2738177/pexels-photo-2738177.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
           },
         },
         {
@@ -69,7 +67,7 @@ const categories: {
           name: 'Scarfs',
           images: {
             image_1:
-              'https://img.freepik.com/free-photo/woman-s-hand-holding-patterned-scarf-fashion_53876-102091.jpg?w=360&t=st=1686836082~exp=1686836682~hmac=6c8918c30e90ad9e382333ef0c4017a954319c971d5c8949b1b4d0dc5c741900',
+              'https://images.unsplash.com/photo-1623832101940-647285e32a58?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80',
             image_2:
               'https://images.pexels.com/photos/375880/pexels-photo-375880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
             image_3:
@@ -85,7 +83,7 @@ const CategoryInfo = (
     <div className="max-w-md mx-auto text-center">
       <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">Our featured items</h2>
       <p className="mt-4 text-base font-normal leading-7 text-gray-600">
-      Unleash Your Fashion Persona: Introducing Our Must-Have Styles!    
+      Unleash Your Fashion Persona: Introducing Our Must-Have Styles!
       </p>
     </div>
   );
@@ -150,7 +148,7 @@ const PrvFeatureItem = () => {
         </a>
         <div className="px-5 pb-5 mt-4">
           <a href="#">
-            <h5 className="text-xl tracking-tight text-slate-900 pb-3">{subcategory.name}</h5>
+            <h5 className="pb-3 text-xl tracking-tight text-slate-900">{subcategory.name}</h5>
           </a>
           {/* <div className="flex items-center justify-between mt-2 mb-5">
             <p>

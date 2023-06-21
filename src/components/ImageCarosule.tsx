@@ -34,6 +34,9 @@ export default function ImageCarousel(props: any) {
       >
         {cat_images.map((item: any) => (
           <div key={item} className="lg:w-full h-1/2 lg:h-screen carousel-slide">
+            <div className="absolute top-0 left-0 p-4 block  md:hidden z-50">
+                      <img src="/logo2.svg" alt="Logo" className="w-32 h-10 " />
+                    </div>
             <img src={`https://typof-ai.typof.co/images/categoryimages/${item}`} alt="" className="content-center object-cover w-full h-full" height={0} width={0} />
           </div>
         ))}
