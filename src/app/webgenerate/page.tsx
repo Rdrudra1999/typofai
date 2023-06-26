@@ -16,14 +16,14 @@ interface PrvHeaderProps {
 const PrvDemoWeb = () => {
   const [businessName, setBusinessName] = useState('');
   const [loading, setLoading] = useState(true);
-  const [loadingText, setLoadingText] = useState('Gerenrating a beautifull website...');
+  const [loadingText, setLoadingText] = useState('Generating a beautiful website...');
   const loadingSteps = [
-    'Gerenrating Banner...',
-    'Gerenrating Short Intro...',
-    'Gerenrating Feature Item...',
-    'Gerenrating Category...',
-    'Gerenrating News Letter...',
-    'Gerenrating Footer...',
+    'Generating Banner...',
+    'Generating Short Intro...',
+    'Generating Feature Item...',
+    'Generating Category...',
+    'Generating News Letter...',
+    'Generating Footer...',
   ];
   const [stepIndex, setStepIndex] = useState(0);
   const [websiteReady, setWebsiteReady] = useState(false);
