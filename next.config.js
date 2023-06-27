@@ -1,7 +1,7 @@
 module.exports = {
     reactStrictMode: true,
     images: {
-      domains: ['localhost', 'res.cloudinary.com', 'images.unsplash.com', 'source.unsplash.com','mcqmate.com'],
+      domains: ['localhost', 'res.cloudinary.com', 'images.unsplash.com', 'source.unsplash.com','mcqmate.com','uploads-ssl.webflow.com'],
     },
   };
   
